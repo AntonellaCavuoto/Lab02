@@ -24,6 +24,9 @@ while(True):
         t.handleTranslate(txtIn)
 
     elif int(txtIn) == 3:
-        pass
+        print("Quale parola devo tradurre?")
+        txtIn = input()
+        t.handleWildCard(txtIn)
+
     elif int(txtIn) == 4:
         break

@@ -23,7 +23,15 @@ class Translator:
     def handleAdd(self, entry):
         campi = entry.split(" ")
        # if (len(campi) == 2):
-        self.d.addWord(campi[0], campi[1])
+
+        i = len(campi)
+        j = 1;
+        if i == 2:
+         self.d.addWord(campi[0], campi[1])
+        else:
+            while j < i:
+                self.d.addWord(campi[0], campi[j])
+                j = j+1
         # else:
         #     i = len(campi)
         #     j = 0
@@ -44,4 +52,4 @@ class Translator:
 
     def handleWildCard(self,query):
         # query is a string with a ? --> <par?la_aliena>
-        pass
+        print(self.d.translateWordWildCard(query))
