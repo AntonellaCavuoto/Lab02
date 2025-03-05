@@ -29,4 +29,8 @@ while(True):
         t.handleWildCard(txtIn)
 
     elif int(txtIn) == 4:
+        print("Stampo il dizionario")
+        t.stampaDizionario()
+
+    elif int(txtIn) == 5:
         break

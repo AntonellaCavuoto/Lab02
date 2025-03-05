@@ -75,3 +75,7 @@ class Dictionary:
             riga = input_file.readline()
 
         input_file.close()
+
+    def __str__(self):
+        listaTemp = list(self.dizionario.values())
+        return print(listaTemp)

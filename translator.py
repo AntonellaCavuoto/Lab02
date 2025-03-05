@@ -53,3 +53,6 @@ class Translator:
     def handleWildCard(self,query):
         # query is a string with a ? --> <par?la_aliena>
         print(self.d.translateWordWildCard(query))
+
+    def stampaDizionario(self):
+        return self.d.__str__()
